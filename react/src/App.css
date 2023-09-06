@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.zoom:hover{
+    transform: scale(1.05);
+    transition-duration: 100ms;
+}
+
+.picture-tiling{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.no-mt-first:first-child{
+    margin-top: 0 !important;
+}
