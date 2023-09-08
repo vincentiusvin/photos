@@ -1,0 +1,12 @@
+services:
+  flask:
+    container_name: flask
+    build: ./flask
+    volumes:
+      - ./flask/images:/mnt
+
+  react:
+    container_name: react
+    build: ./react
+    ports:
+      - "80:80"
